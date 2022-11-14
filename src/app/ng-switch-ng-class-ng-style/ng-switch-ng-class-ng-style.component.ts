@@ -36,9 +36,9 @@ export class NgSwitchNgClassNgStyleComponent implements OnInit {
   }
 
 
+  // NgStyle Örneği
   focus:boolean = false;
   charLength:number = 0;
-  // NgStyle Örneği
 
   onBlur(){
     this.focus = false;
