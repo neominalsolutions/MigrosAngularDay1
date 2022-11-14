@@ -1,21 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { PrivacyComponent } from './privacy/privacy.component';
+import { NgIfNgForComponent } from './NgForNgIf/ngIfNgFor.component';
+import { PropertyEventBindingComponent } from './PropertyEventBinding/PropertyEventBinding.component';
 
 const routes: Routes = [
   {
-    path:'home',
-    component:HomeComponent
+    path:'property-event-binding',
+    component:PropertyEventBindingComponent
   },
   {
-    path:'about',
-    component:AboutComponent
-  },
-  {
-    path:'privacy',
-    component:PrivacyComponent
+    path:'ngif-ngfor',
+    component:NgIfNgForComponent
   }
 ];
 

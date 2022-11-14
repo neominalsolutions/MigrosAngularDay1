@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './PropertyEventBinding.component.html',
+  styleUrls: ['./PropertyEventBinding.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class PropertyEventBindingComponent implements OnInit {
 
   // default da angularda tanımlanan değişkeler public olarak kendi htmlden çağırıabilir.
   private title:string = 'home';

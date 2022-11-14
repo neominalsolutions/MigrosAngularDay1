@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { User } from './User';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  templateUrl: './ngIfNgFor.component.html',
+  styleUrls: ['./ngIfNgFor.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class NgIfNgForComponent implements OnInit {
 
   // *ngIf ve *NgFor directive kullanımı
 
