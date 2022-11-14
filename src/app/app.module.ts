@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PropertyEventBindingComponent } from './PropertyEventBinding/PropertyEventBinding.component';
 import { NgIfNgForComponent } from './NgForNgIf/ngIfNgFor.component';
+import { NgSwitchNgClassNgStyleComponent } from './ng-switch-ng-class-ng-style/ng-switch-ng-class-ng-style.component';
 
 
 @NgModule({
   declarations: [			
     AppComponent,
       PropertyEventBindingComponent,
-      NgIfNgForComponent
+      NgIfNgForComponent,
+      NgSwitchNgClassNgStyleComponent
    ],
   imports: [
     BrowserModule,

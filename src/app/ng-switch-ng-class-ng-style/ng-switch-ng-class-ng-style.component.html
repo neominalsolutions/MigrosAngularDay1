@@ -1,0 +1,21 @@
+
+<select (change)="onChange($event)">
+  <option value="{{city.name}}" *ngFor="let city of cities">{{city.name}}</option>
+  <!-- <option [value]="city.name" *ngFor="let city of cities">{{city.name}}</option> -->
+</select>
+
+<!-- ikiden daha fazla case varsa *ngIf yerine ngSwitch directive kullanırız. -->
+
+<div [ngSwitch]="selectedCity">
+  <div *ngSwitchCase="'istanbul'"> En yoğun trafik </div>
+  <div *ngSwitchCase="'izmir'"> Hafta sonu tatil </div>
+  <div *ngSwitchCase="'ankara'"> Kışı Ayaz </div>
+  <div *ngSwitchDefault > Seçim yapılmadı </div>
+</div>
+
+
+<!-- Ng Class Sample -->
+<!-- ternaryIf ile aşağıdaki örneği yaptık -->
+<!-- ngClass koşula göre stil verme veya alma işlemi yaptık -->
+<!-- event method bağlamandan bir propertynin değerini değiştirerek html doma değiştirdik -->
+<button [disabled]="!active" [ngClass]="active ? 'active':'passive'" (click)="active = !active"> {{active ? 'Aktif':'Pasif'}} </button>
