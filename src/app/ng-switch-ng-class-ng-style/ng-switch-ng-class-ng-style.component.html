@@ -1,4 +1,11 @@
 
+
+<span>
+  Ng Switch Sample:
+</span>
+
+<br>
+
 <select (change)="onChange($event)">
   <option value="{{city.name}}" *ngFor="let city of cities">{{city.name}}</option>
   <!-- <option [value]="city.name" *ngFor="let city of cities">{{city.name}}</option> -->
@@ -13,9 +20,41 @@
   <div *ngSwitchDefault > Seçim yapılmadı </div>
 </div>
 
+<hr>
+
 
 <!-- Ng Class Sample -->
 <!-- ternaryIf ile aşağıdaki örneği yaptık -->
 <!-- ngClass koşula göre stil verme veya alma işlemi yaptık -->
 <!-- event method bağlamandan bir propertynin değerini değiştirerek html doma değiştirdik -->
+
+<br>
+
+<span>NgClass Sample:</span>
+
 <button [disabled]="!active" [ngClass]="active ? 'active':'passive'" (click)="active = !active"> {{active ? 'Aktif':'Pasif'}} </button>
+
+<hr>
+
+
+<!-- ngStyle ise duruma göre genelde koşula göre elemente inline style uygulamamızı sağlayan bir directive  -->
+
+<!-- blur ve focus durumlarında input background color değiştirelim -->
+<br>
+<span>NgStyle Sample :</span>
+<input [ngStyle]="focus ? {'background-color':'green','color':'white'}:{'background-color':'yellow','color':'red'}" (blur)="onBlur()" (focus)="onFocus()">
+
+
+<!-- farklı bir stil tanımlama yöntemi -->
+<!-- charLength 20 satırı geçerse -->
+<p>Karakter Sayısı : {{charLength}}</p>
+
+<span [style.backgroundColor]="charLength > 20 ? 'red':'white'">
+  Dikkat
+</span>
+
+<input (input)="onInput($event)">
+
+
+
+
